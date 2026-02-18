@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frikis del Córner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- NAV importado -->
+    <div id="navComun"></div>
+
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1>Bienvenido a Frikis del Córner</h1>
+            <p>Consulta estadísticas de fútbol de la Región de Murcia en tiempo real</p>
+        </div>
+
+        <section class="hero">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/imgPrincipal.png" class="d-block w-100" alt="imagen principal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/imgCamiseta.png" class="d-block w-100" alt="imagen camiseta">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/imgHero1.webp" class="d-block w-100" alt="imagen hero 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/imgHero2.jpeg" class="d-block w-100" alt="imagen hero 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/imgHero3.jpeg" class="d-block w-100" alt="imagen hero 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <section class="container py-4">
+        <h3>Mi equipo favorito</h3>
+        <div id="equipoFavorito"></div>
+    </section>
+
+
+
+    <aside>
+        <section>
+            <div class="contenedorNoticias container text-center py-5">
+                <h2 class="mb-4">Noticias deportivas en la Región de Murcia</h2>
+
+                <div class="row contenedorCardsNoticias g-4"></div>
+            </div>
+        </section>
+    </aside>
+
+    <!-- FOOTER importado -->
+    <div id="footerComun"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/api.js"></script>
+
+</body>
+
+</html>
