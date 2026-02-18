@@ -1,12 +1,13 @@
 <?php
-$host = "localhost";
-$dbname = "frikis_corner";
-$user = "root";
-$pass = "";
+$host = getenv("MYSQL_HOST");
+$dbname = getenv("MYSQL_DATABASE");
+$user = getenv("MYSQL_USER");
+$pass = getenv("MYSQL_PASSWORD");
+$port = getenv("MYSQL_PORT") ?: 3306;
 
 try {
     $conn = new PDO(
-        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+        "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4",
         $user,
         $pass,
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
